@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "kingdomcraft",
+	"version": "${version}",
+	"name": "KingdomCraft",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"sergih"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/kingdomcraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.sergih.kingdomcraft.KingdomCraft"
+		],
+		"client": [
+			"net.sergih.kingdomcraft.KingdomCraftClient"
+		],
+		"fabric-datagen": [
+			"net.sergih.kingdomcraft.KingdomCraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"kingdomcraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
